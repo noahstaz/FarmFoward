@@ -49,18 +49,20 @@ img {
 }
 
 .head {
-    background-image: url("./images/TreeBackground.jpg");
+    background-image: url("./images/FinanceTreeBackground3.jpg");
     /*-webkit-filter: blur(2px);
   filter: blur(2px);*/
     backdrop-filter: sepia(.4);
     filter: sepia(.4);
     height: 14em;
+    background-position: center;
+    background-size: cover;
     display: flex;
     align-items: center;
 }
 
 .background {
-    background-image: url("./images/TreeBackground.jpg");
+    background-image: url("./images/FinanceTreeBackground.jpg");
     /*-webkit-filter: blur(2px);
   filter: blur(2px);*/
     height: 14em;

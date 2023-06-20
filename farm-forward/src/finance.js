@@ -1,8 +1,6 @@
 import React from 'react';
 import './finance.css';
 import 'bootstrap/dist/css/bootstrap.css';
-import HappyFarmer from './images/happy.webp';
-import HeadBG from './images/TreeBackground.jpg';
 
 function FinancePage() {
   return (
