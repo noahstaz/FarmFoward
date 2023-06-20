@@ -57,8 +57,13 @@ const firebaseConfig = {
           <ul>
             {tutorialVideos.map((video, index) => (
               <li key={index}>
-                <button onClick={() => setCurrentVideoIndex(index)}>{video.title}</button>
-              </li>
+              <button
+                className="sidebar-button" 
+                onClick={() => setCurrentVideoIndex(index)}
+              >
+                {video.title}
+              </button>
+            </li>
             ))}
           </ul>
         </div>

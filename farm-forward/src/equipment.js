@@ -9,11 +9,11 @@ function EquipmentPage() {
         <div className="financeMain">
       <Header/>
       <div className="head">
-        <div className="subTitle">Equipment</div>
+        <div className="subTitle">Equipment & Land</div>
       </div>
 
       <div className="opportunities">
-        <h2>For Sale</h2>
+        <h2>Equipment For Sale</h2>
         <div className="list-group">
           <a href="#" className="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
             <div className="d-flex align-items-center">
@@ -40,7 +40,7 @@ function EquipmentPage() {
       </div>
 
       <div className="upcoming">
-        <h2>For Rent</h2>
+        <h2>Equipment For Rent</h2>
         <div className="list-group">
           <a href="#" className="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
             <div className="d-flex align-items-center">
@@ -61,6 +61,33 @@ function EquipmentPage() {
               </div>
             </div>
             <span className="due-date">Rental period: October 2023 - April 2024</span>
+          </a>
+          {/* Add more list items */}
+        </div>
+      </div>
+
+      <div className="upcoming">
+        <h2>Land for Sale Near You</h2>
+        <div className="list-group">
+          <a href="#" className="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+            <div className="d-flex align-items-center">
+            <img src={require("./images/Baler.jpg")} alt="Image" className="img-thumbnail" />
+              <div className="ml-3">
+                <span className="dollar">$14,800</span>
+                <span className="ml-1 description">10 Acres South-Easter Saskatchewan</span>
+              </div>
+            </div>
+            <span className="due-date">Date posted: 2023-05-24</span>
+          </a>
+          <a href="#" className="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+            <div className="d-flex align-items-center">
+            <img src={require("./images/elevator.webp")} alt="Image" className="img-thumbnail" />
+              <div className="ml-3">
+                <span className="dollar">$65,000</span>
+                <span className="ml-1 description">50 Acres in Northern Saskatchewan</span>
+              </div>
+            </div>
+            <span className="due-date">Date posted: 2023-06-04</span>
           </a>
           {/* Add more list items */}
         </div>

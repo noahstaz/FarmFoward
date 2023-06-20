@@ -1,8 +1,42 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.mainBody {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-around; */
+  align-items: center;
+  min-height: 100vh;
+  background-image: url("./images/TreeBackground.jpg");
+  background-size: cover;
+}
+
+.logo-container {
+  text-align: center;
+  margin: 3rem;
+}
+
+.logo-container img {
+  max-width: 150px;
+  height: auto;
+  background-color: rgb(247, 244, 244, 0.9);
+  border-radius: 100%;
+}
+
+.greeting{
+  color: white;
+  padding: 0.5rem;
+  text-shadow: 0 0 0.7rem black;
+  margin: 2rem;
+  background-color: rgba(128, 128, 128, 0.5);
+}
 .centered-box {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  width: 100%;
 }
 
 .slide-container {
@@ -10,10 +44,6 @@
   padding: 20px;
   background-color: #f0f0f0;
   transition: transform 0.3s ease-in-out;
-}
-
-.slide-left {
-  transform: translateX(-100%);
 }
 
 form {
@@ -39,7 +69,7 @@ input[type='checkbox'] {
 button {
   margin-top: 10px;
   padding: 8px 12px;
-  background-color: rgb(37,232,128);
+  background-color: rgb(37, 232, 128);
   color: #fff;
   border: none;
   border-radius: 4px;
@@ -68,13 +98,7 @@ button {
   margin-left: 5px;
 }
 
-.mainBody {
-  background-image: url("./images/TreeBackground.jpg");
-  background-size: cover;
-}
-
 .buttonName {
   text-decoration: none;
   color: white;
 }
-
