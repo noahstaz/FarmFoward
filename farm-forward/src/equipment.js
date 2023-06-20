@@ -23,7 +23,10 @@ function EquipmentPage() {
                 <span className="ml-1 description">162 South West quarter of Section 1, Township 1, Range 12, West of the 1st Meridian</span>
               </div>
             </div>
-            <span className="due-date">Date posted: 2023-05-24</span>
+            <span className="due-date">
+            <div className="viewDetails"><button type="button">View Details</button></div>
+              Date posted: 2023-05-24
+            </span>
           </a>
           <a href="#" className="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
             <div className="d-flex align-items-center">
@@ -33,7 +36,10 @@ function EquipmentPage() {
                 <span className="ml-1 description">210 Acres North West quarter of Section 1, Township 21, Range 1, West of the 2nd Meridian</span>
               </div>
             </div>
-            <span className="due-date">Date posted: 2023-06-04</span>
+            <span className="due-date">
+              <div className="viewDetails"><button type="button">View Details</button></div>
+              Date posted: 2023-06-04
+            </span>
           </a>
           {/* Add more list items */}
         </div>
@@ -50,7 +56,10 @@ function EquipmentPage() {
                 <span className="ml-1 description">2016 John Deer Tractor</span>
               </div>
             </div>
-            <span className="due-date">Date listed: 2023-05-30</span>
+            <span className="due-date">
+              <div className="viewDetails"><button type="button">View Details</button></div>
+              Date listed: 2023-05-30
+            </span>
           </a>
           <a href="#" className="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
             <div className="d-flex align-items-center">
@@ -60,7 +69,10 @@ function EquipmentPage() {
                 <span className="ml-1 description">2020 Case IH Combine</span>
               </div>
             </div>
-            <span className="due-date">Date listed: 2023-06-15</span>
+            <span className="due-date">
+              <div className="viewDetails"><button type="button">View Details</button></div>
+              Date listed: 2023-06-15
+            </span>
           </a>
           {/* Add more list items */}
         </div>
@@ -77,7 +89,10 @@ function EquipmentPage() {
                 <span className="ml-1 description">Baler Rental for the Summer intended for small farmers</span>
               </div>
             </div>
-            <span className="due-date">Rental Period: May 2023 - September 2023</span>
+            <span className="due-date">
+              <div className="viewDetails"><button type="button">View Details</button></div>
+              Rental Period: May 2023 - September 2023
+            </span>
           </a>
           <a href="#" className="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
             <div className="d-flex align-items-center">
@@ -87,7 +102,10 @@ function EquipmentPage() {
                 <span className="ml-1 description">South Saskatchewan Grain Elevator</span>
               </div>
             </div>
-            <span className="due-date">Rental period: October 2023 - April 2024</span>
+            <span className="due-date">
+              <div className="viewDetails"><button type="button">View Details</button></div>
+              Rental period: October 2023 - April 2024
+            </span>
           </a>
           {/* Add more list items */}
         </div>

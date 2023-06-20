@@ -113,3 +113,11 @@ img {
 .financeMain {
   background-color: var(--background-color);
 }
+
+.viewDetails {
+  margin-bottom: 1em;
+  text-align: right;
+  font-size: 16px;
+  padding: 15px, 32px;
+  margin-right: 10px;
+}
