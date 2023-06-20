@@ -10,9 +10,6 @@ function EquipmentPage() {
       <Header/>
       <div className="head">
         <div className="subTitle">Equipment</div>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path fill="#f5f5f0" fill-opacity="1" d="M0,64L60,90.7C120,117,240,171,360,181.3C480,192,600,160,720,128C840,96,960,64,1080,64C1200,64,1320,96,1380,112L1440,128L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path>
-        </svg>
       </div>
 
       <div className="opportunities">
@@ -47,20 +44,20 @@ function EquipmentPage() {
         <div className="list-group">
           <a href="#" className="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
             <div className="d-flex align-items-center">
-            <img src={require("./images/canada.jpg")} alt="Image" className="img-thumbnail" />
+            <img src={require("./images/Baler.jpg")} alt="Image" className="img-thumbnail" />
               <div className="ml-3">
-                <span className="dollar">$100,000</span>
-                <span className="ml-1 description">Governement of Canada new farmers subsidy</span>
+                <span className="dollar">$4,000/month</span>
+                <span className="ml-1 description">Baler Rental for the Summer intended for small farmers</span>
               </div>
             </div>
             <span className="due-date">Rental Period: May 2023 - September 2023</span>
           </a>
           <a href="#" className="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
             <div className="d-flex align-items-center">
-            <img src={require("./images/Cultivator.jpg")} alt="Image" className="img-thumbnail" />
+            <img src={require("./images/elevator.webp")} alt="Image" className="img-thumbnail" />
               <div className="ml-3">
-                <span className="dollar">$10,000</span>
-                <span className="ml-1 description">Cultivator's 24 hour AgTech startup competition</span>
+                <span className="dollar">$2,000/mo</span>
+                <span className="ml-1 description">South Saskatchewan Grain Elevator</span>
               </div>
             </div>
             <span className="due-date">Rental period: October 2023 - April 2024</span>
