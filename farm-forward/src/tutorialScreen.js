@@ -35,4 +35,4 @@ const TutorialScreen = () => {
   );
 };
 
-export default MyComponent;
+export default TutorialScreen;
