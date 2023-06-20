@@ -18,21 +18,21 @@ function FinancePage() {
             <div className="d-flex align-items-center">
               <img src="/path/to/image.jpg" alt="Image" className="img-thumbnail" />
               <div className="ml-3">
-                <span className="badge badge-success">$100</span>
-                <span className="ml-1 description">Item 1 Description</span>
+                <span className="badge badge-success">$1,000,000</span>
+                <span className="ml-1 description">FCC loan for diverse candidates purchasing equipment</span>
               </div>
             </div>
-            <span className="due-date">Expires on: 2023-06-30</span>
+            <span className="due-date">Expires on: 2023-07-30</span>
           </a>
           <a href="#" className="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
             <div className="d-flex align-items-center">
               <img src="/path/to/image.jpg" alt="Image" className="img-thumbnail" />
               <div className="ml-3">
-                <span className="badge badge-success">$200</span>
-                <span className="ml-1 description">Item 2 Description</span>
+                <span className="badge badge-success">$20,000</span>
+                <span className="ml-1 description">City of Regina grant for family farms</span>
               </div>
             </div>
-            <span className="due-date">Expires on: 2023-07-15</span>
+            <span className="due-date">Expires on: 2023-09-15</span>
           </a>
           {/* Add more list items */}
         </div>

@@ -49,18 +49,29 @@ img {
 }
 
 .head {
-    height: 400px;
     background-image: url("./images/TreeBackground.jpg");
     /*-webkit-filter: blur(2px);
   filter: blur(2px);*/
+    backdrop-filter: sepia(.4);
+    filter: sepia(.4);
+    height: 14em;
+    display: flex;
+    align-items: center;
+}
+
+.background {
+    background-image: url("./images/TreeBackground.jpg");
+    /*-webkit-filter: blur(2px);
+  filter: blur(2px);*/
+    backdrop-filter: sepia(.4);
+    filter: sepia(.4);
+    height: 14em;
+    display: flex;
+    align-items: center;
 }
 
 .subTitle {
-    margin-left: 4em;
-    width: 8em;
-    position: absolute;
-    top: 50%;
-    transform: translate(0, -50%);
+    margin-left: 2em;
     color: white;
     font-size: 64px;
 }
