@@ -6,7 +6,7 @@ import HeadBG from './images/TreeBackground.jpg';
 
 function FinancePage() {
   return (
-    <div>
+    <div className="background">
       <div className="head">
         <div className="subTitle">Funding Opportunities</div>
       </div>
