@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 
 function FinancePage() {
   return (
-    <div>
+    <div className="background">
       <div className="head">
         <div className="subTitle">Funding Opportunities</div>
       </div>
