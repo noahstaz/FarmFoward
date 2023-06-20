@@ -7,7 +7,7 @@ import Header from './header';
 import OnboardingScreen from './onboardingScreen';
 import Finance from './finance';
 import Footer from './footer';
-// import TutorialScreen from './tutorialScreen';
+import TutorialScreen from './tutorialScreen';
 
 const  App = () => {
   return (
@@ -17,6 +17,7 @@ const  App = () => {
         <Route path="/finance" component={Finance} />
         <Route exact path="/header" component={Header} />
        < Route exact path="/footer" component={Footer} />
+        <Route exact path="/tutorials" component={TutorialScreen} />
       </Switch>
     
     </BrowserRouter>
