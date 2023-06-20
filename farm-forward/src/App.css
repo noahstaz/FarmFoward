@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -35,5 +35,17 @@
   to {
     transform: rotate(360deg);
   }
+} */
+
+@import url('https://fonts.googleapis.com/css?family=Raleway|Montserrat');
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Raleway', sans-serif;
+  color: #333;
+  font-weight: bold;
 }
 
+p {
+  font-family: 'Montserrat', sans-serif;
+  color: #777;
+}

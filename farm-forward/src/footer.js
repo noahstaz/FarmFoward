@@ -52,6 +52,7 @@ const Footer = () => {
             >
               <FontAwesomeIcon icon={faYoutube} />
             </a>
+            
           </div>
         </div>
       </footer>

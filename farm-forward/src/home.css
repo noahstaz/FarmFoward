@@ -4,8 +4,39 @@
 }
 
 .farming-video{
-    width: 450px;
+    width: 500px;
 }
+
+.card-align{
+    align-self: center;
+}
+
+.card-width{
+    width: 75%;
+}
+
+.card-width > .card{
+    box-shadow: 0 2.125rem 1.25rem rgba(0, 0, 0, 0.095) !important;
+    background-color: rgb(37,232,128);
+    border: none;
+}
+
+.customCard{
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.095) !important;
+    background-color: rgb(255, 255, 255);
+    border: none;
+}
+
+.card-width > .card > .card-body h4{
+    font-weight: 1000;
+}
+
+.carousel-images {
+  width: 50%;
+  height: 50%;
+  object-fit: cover;
+}
+
 
 .fade-left {
     opacity: 0;
@@ -21,4 +52,25 @@
       opacity: 1;
       transform: translateX(0);
     }
+  }
+
+  .fade-right {
+    opacity: 0;
+    animation: fadeRightAnimation 1s ease-in forwards;
+  }
+  
+  @keyframes fadeRightAnimation {
+    0% {
+      opacity: 0;
+      transform: translateX(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }  
+
+  .bb{
+    background-color: rgb(37,232,128);
+    margin: 0 !important;
   }
