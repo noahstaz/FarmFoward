@@ -205,7 +205,7 @@ const OnboardingScreen = () => {
                 <button type="button" onClick={handleBack}>
                   Back
                 </button>
-                <button type="submit">Finish</button>
+                <button type="submit"><a href="/home" className="buttonName">Finish</a></button>
               </div>
             </form>
           );
@@ -216,8 +216,10 @@ const OnboardingScreen = () => {
   
 
   return (
-    <div className="centered-box">
-      <div className="slide-container">{renderForm()}</div>
+    <div className="mainBody">
+      <div className="centered-box">
+        <div className="slide-container">{renderForm()}</div>
+      </div>
     </div>
   );
 };

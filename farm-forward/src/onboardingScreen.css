@@ -23,7 +23,7 @@ form {
 
 h2 {
   font-size: 20px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 input[type='text'],
@@ -66,5 +66,15 @@ button {
 .checkbox-small label {
   display: inline-block;
   margin-left: 5px;
+}
+
+.mainBody {
+  background-image: url("./images/TreeBackground.jpg");
+  background-size: cover;
+}
+
+.buttonName {
+  text-decoration: none;
+  color: white;
 }
 
