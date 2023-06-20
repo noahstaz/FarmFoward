@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { initializeApp } from 'firebase/app';
 import { getFirestore, collection, getDocs } from 'firebase/firestore';
 import './tutorialScreen.css';
+import Header from './header';
 
 // Firebase configuration
 const firebaseConfig = {
@@ -47,8 +48,9 @@ const firebaseConfig = {
   
     return (
       <div className="tutorial-screen">
+        {/* <Header /> */}
         <div className="side-menu">
-          <h3>Tutorial Menu</h3>
+          <h3>Tutorials</h3>
           <ul>
             {tutorialVideos.map((video, index) => (
               <li key={index}>
