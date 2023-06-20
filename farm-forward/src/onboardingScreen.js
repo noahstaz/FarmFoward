@@ -217,6 +217,12 @@ const OnboardingScreen = () => {
 
   return (
     <div className="mainBody">
+      <div className="logo-container">
+        <img src="/static/media/logo.4391c8b2.svg" alt="Logo" />
+      </div>
+      <div>
+        <h3 class="greeting">Become a Farm Forward member</h3>
+      </div>
       <div className="centered-box">
         <div className="slide-container">{renderForm()}</div>
       </div>
