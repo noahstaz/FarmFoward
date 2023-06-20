@@ -6,7 +6,7 @@ import './App.css';
 import Header from './header';
 import OnboardingScreen from './onboardingScreen';
 import Finance from './finance';
-import TutorialScreen from './tutorialScreen';
+// import TutorialScreen from './tutorialScreen';
 
 function App() {
   return (
