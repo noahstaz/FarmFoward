@@ -2,8 +2,12 @@ import React from 'react';
 import Header from './header';
 import './home.css';
 import ScrollAnimation from 'react-animate-on-scroll';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import "animate.css/animate.min.css";
-import FarmingVideo from './images/farming-video.mp4'
+import FarmingVideo from './images/farming-video.mp4';
+import Image1 from './images/canada.jpg';
+import Image2 from './images/Cultivator.jpg';
+import Image3 from './images/fcc.jpg';
 //import Footer from './footer';
 //import { NavLink, Outlet } from 'react-router-dom';
 
@@ -17,7 +21,7 @@ function Home() {
                 {/* <ScrollAnimation duration={2}
                     animateIn="animate__fadeInLeft"> */}
                     <div className="col-6">
-                            <video className='farming-video' src={FarmingVideo} autoplay loop muted/>
+                        <video className='farming-video' src={FarmingVideo} autoPlay loop muted/>
                     </div>
                     <div className="col-6">
                         <div className='card border-light text-center'>
@@ -29,15 +33,33 @@ function Home() {
                             </div>
                         </div>
                     </div>
-                {/* </ScrollAnimation> */}
             </div>
-
-            {/* <div className="section_i">
-                <ScrollAnimation duration={2}
-                    animateIn="animate__fadeInUp">
-                    <div className="section_i_heading">Wait..,</div>
-                    <div className="section_i_heading">But what actual problem is ?</div>
-                </ScrollAnimation>
+            <div className='grants row m-2 mt-5 fade-right'>
+                <div className="col-6">
+                    <div className='card border-light text-center'>
+                        <div className='card-body'>
+                            <h5 className='card-title font-weight-bold'>Our Mission</h5>
+                            <p className='card-text'>
+                            Now, when you run your React application, you will see a navigation menu with links to the Home and About pages. Clicking on each link will render the corresponding component below the navigation menu.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div className="col-6">
+                    <div id="carouselExampleSlidesOnly" className="carousel slide" data-bs-ride="carousel" data-interval="3000">
+                        <div className="carousel-inner">
+                            <div className="carousel-item active">
+                                <img src={Image2} className="caraousel-images" alt="..."/>
+                            </div>
+                            <div className="carousel-item">
+                                <img src={Image1} className="caraousel-images" alt="..."/>
+                            </div>
+                            <div className="carousel-item">
+                                <img src={Image3} className="caraousel-images" alt="..."/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <br />
                 <br />
                 <ScrollAnimation duration={2}
@@ -102,9 +124,8 @@ function Home() {
                 </div>
             </div>
             <br />
-            <br /> */}
-
-        </div>
+            <br />
+</div>
         </div>
     );
 }
