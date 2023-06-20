@@ -1,4 +1,5 @@
 import React from 'react';
+import './finance.css';
 
 function Finance() {
   return (
