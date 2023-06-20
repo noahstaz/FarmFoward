@@ -22,8 +22,12 @@ p {
 }
   
   .side-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: top;
     width: 200px;
-    background-color: #40b93c; /* Lighter green */
+    background-color: #40b93c;
     padding: 20px;
     overflow-y: visible;
   }
@@ -42,7 +46,7 @@ p {
   }
   
   .sidebar-button:hover {
-    background-color: #45a249; /* Darker green */
+    background-color: #fffdd2; /* Darker green */
   }
   
   .video-container {
