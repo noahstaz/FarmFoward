@@ -14,7 +14,7 @@ const Header = ({loggedInUser }) => {
             <li className='mx-3'><a href="/home">Home</a></li>
           <li className='mx-3'><a href="/finance">Funding</a></li>
           <li className='mx-3'><a href="/tutorials">Learning</a></li>
-          <li className='mx-3'><a href="/equipment">Equipment</a></li>
+          <li className='mx-3'><a href="/equipment">Equipment & Land</a></li>
         </ul>
       </nav>
       <div className="header-right">
