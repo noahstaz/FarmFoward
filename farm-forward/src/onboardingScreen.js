@@ -26,23 +26,25 @@ const OnboardingScreen = () => {
   };
 
   const handleBack = () => {
-    setFormIndex(0);
-    setFormData({
-      name: '',
-      phone: '',
-      email: '',
-      password: '',
-      role: '',
-      grants: false,
-      tutorial: false,
-      equipment: false,
-      newsletter: false,
-    });
+    if (formIndex === 1 || formIndex === 2) {
+      setFormIndex((prevIndex) => prevIndex - 1);
+    }
   };
 
   const handleNext = () => {
-    if (formIndex === 0 && isFormFilled()) {
-      setFormIndex(1);
+    if (formIndex === 0) {
+      if (isFormFilled()){
+        setFormIndex(1);
+      }
+      else {
+        alert('Please fill in form.');
+      }
+    } else if (formIndex === 1) {
+      if (formData.role !== '') {
+        setFormIndex(2);
+      } else {
+        alert('Please select a role option.');
+      }
     }
   };
 
@@ -147,7 +149,7 @@ const OnboardingScreen = () => {
               <button type="button" onClick={handleBack}>
                 Back
               </button>
-              <button type="submit">Next</button>
+              <button type="button" onClick={handleNext}>Next</button>
             </div>
           </form>
         );
@@ -215,9 +217,7 @@ const OnboardingScreen = () => {
 
   return (
     <div className="centered-box">
-      <div className={`slide-container ${formIndex > 0 ? 'slide-left' : ''}`}>
-        {renderForm()}
-      </div>
+      <div className="slide-container">{renderForm()}</div>
     </div>
   );
 };
