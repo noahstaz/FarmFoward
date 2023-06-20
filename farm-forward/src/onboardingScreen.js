@@ -174,7 +174,7 @@ const OnboardingScreen = () => {
                     checked={formData.tutorial}
                     onChange={handleInputChange}
                   />
-                  Tutorial
+                  Tutorials
                 </label>
               </div>
               <div>
