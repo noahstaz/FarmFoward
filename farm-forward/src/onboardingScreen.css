@@ -27,7 +27,7 @@ body {
 
 .greeting{
   color: white;
-  padding: 0.5rem;
+  padding: 0.5rem 1rem;
   text-shadow: 0 0 0.7rem black;
   margin: 2rem;
   background-color: rgba(128, 128, 128, 0.5);
@@ -49,6 +49,15 @@ body {
 form {
   display: flex;
   flex-direction: column;
+  gap: 0.5rem;
+}
+.radio-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.radio-label {
+  margin-left: 1rem; 
 }
 
 h2 {
@@ -66,6 +75,12 @@ input[type='checkbox'] {
   border-radius: 4px;
 }
 
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
 button {
   margin-top: 10px;
   padding: 8px 12px;
@@ -77,12 +92,26 @@ button {
 }
 
 .checkbox-label {
-  font-size: 12px;
+  font-size: 1.3rem;
+}
+
+.newsletter-wrapper{
+  margin-top: 2rem;
+  /* justify-content: center; */
+}
+
+.newsletter{
+  font-size: 0.9rem;
 }
 
 .checkbox-wrapper {
   display: flex;
   align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.checkbox-label {
+  margin-left: 0.5rem;
 }
 
 .checkbox-wrapper input[type='checkbox'] {

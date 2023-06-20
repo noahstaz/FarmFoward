@@ -9,7 +9,10 @@ p {
     font-family: 'Montserrat', sans-serif;
 }
 
-
+.lessons-list {
+  margin-right: 2rem;
+  padding: none;
+}
 .tutorial-screen {
   display: flex;
   justify-content: flex-start;
@@ -17,21 +20,26 @@ p {
   height: 100vh;
   width: 100%;
   overflow: hidden;
-  background-color: #e8f5e9; /* Light green */
+  background-color: #fffdd2; 
   padding-bottom: 20px; 
 }
   
   .side-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: top;
     width: 200px;
-    background-color: #40b93c; /* Lighter green */
-    padding: 20px;
+    background-color: #40b93c;
+    padding-top: 20px;
     overflow-y: visible;
   }
 
   .sidebar-button {
+    text-align: center;
     display: block;
     width: 100%;
-    padding: 10px;
+    padding: 5px;
     margin-bottom: 10px;
     background-color: #ffffff; 
     color: #40b93c;
@@ -39,10 +47,11 @@ p {
     border-radius: 4px;
     cursor: pointer;
     font-family: 'Montserrat', sans-serif;
+    box-shadow: 0 0 0.2rem gray inset;
   }
   
   .sidebar-button:hover {
-    background-color: #45a249; /* Darker green */
+    background-color: #fffdd2;
   }
   
   .video-container {
