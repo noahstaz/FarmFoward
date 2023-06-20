@@ -21,19 +21,18 @@
     border: none;
 }
 
-.customCard{
-    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.095) !important;
-    background-color: #40b93c;
-    border: none;
+.customCard > .card-body{
+    box-shadow: 0 12.125rem 10.25rem rgba(0, 0, 0, 0.095) !important;
+    background-color: #f5f8fa;
 }
 
 h4, h2{
-    font-weight: 1000;
+    font-weight: 1000 !important;
 }
 
 .carousel-images {
-  width: 99%;
-  height: 250px;
+  width: 100%;
+  height: 300px;
   object-fit: cover;
 }
 
@@ -82,6 +81,10 @@ h4, h2{
     height: 400px;
   } */
 
+  .priceModel > img{
+    width: fit-content;
+  }
+
   .card-no-border{
-    border: none;
+    border: none !important;
   }
