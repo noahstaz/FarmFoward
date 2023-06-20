@@ -3,39 +3,36 @@ import Header from './header';
 import './home.css';
 import ScrollAnimation from 'react-animate-on-scroll';
 import "animate.css/animate.min.css";
-import Footer from './footer';
-import { NavLink, Outlet } from 'react-router-dom';
+import FarmingVideo from './images/farming-video.mp4'
+//import Footer from './footer';
+//import { NavLink, Outlet } from 'react-router-dom';
 
 function Home() {
 
-    const { user, token } = isAuthenticated();
     return (
         <div >
             <Header/>
-            <div className="home_main">
-                <ScrollAnimation duration={2}
-                    animateIn="animate__fadeInUp">
-                    <div className="main_content">
-                        Animals can't speak ,<br />
-                        but you can !
+            <div className='m-5'>
+            <div className="home_main row fade-left m-2">
+                {/* <ScrollAnimation duration={2}
+                    animateIn="animate__fadeInLeft"> */}
+                    <div className="col-6">
+                            <video className='farming-video' src={FarmingVideo} autoplay loop muted/>
                     </div>
-
-                    <br />
-                    <div className="main_content_followup">Let's make a better world together.</div>
-                    <br />
-                    <br />
-                    {user === undefined ? <>
-                        <NavLink style={{ textDecoration: 'none' }} to="/auth/login"><span className="home_main_btn">Signin</span></NavLink>
-
-                    </> : <>
-                        <NavLink style={{ textDecoration: 'none' }} to="/places"><span className="home_main_btn">Contribute</span></NavLink>
-
-                    </>}
-
-                </ScrollAnimation>
+                    <div className="col-6">
+                        <div className='card border-light text-center'>
+                            <div className='card-body'>
+                                <h5 className='card-title font-weight-bold'>Our Mission</h5>
+                                <p className='card-text'>
+                                Now, when you run your React application, you will see a navigation menu with links to the Home and About pages. Clicking on each link will render the corresponding component below the navigation menu.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                {/* </ScrollAnimation> */}
             </div>
 
-            <div className="section_i">
+            {/* <div className="section_i">
                 <ScrollAnimation duration={2}
                     animateIn="animate__fadeInUp">
                     <div className="section_i_heading">Wait..,</div>
@@ -105,10 +102,9 @@ function Home() {
                 </div>
             </div>
             <br />
-            <br />
-            <Footer />
-            <Outlet />
+            <br /> */}
 
+        </div>
         </div>
     );
 }
