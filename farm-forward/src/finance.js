@@ -1,30 +1,69 @@
 import React from 'react';
 import './finance.css';
+import 'bootstrap/dist/css/bootstrap.css';
+import HappyFarmer from './images/happy.webp';
+import HeadBG from './images/TreeBackground.jpg';
 
 function FinancePage() {
   return (
     <div>
-
-      <div className="eligible-loans">
-        <h2>Eligible Financial Opportunities</h2>
-        <ul>
-          <li>Loan/Grant 1</li>
-          <li>Loan/Grant 2</li>
-          <li>Loan/Grant 3</li>
-          {/* Add more eligible loans/grants */}
-        </ul>
+      <div className="head">
+        <div className="subTitle">Funding Opportunities</div>
       </div>
 
-      <div className="upcoming-grants">
-        <h2>Upcoming Grants/Government Funding</h2>
-        <ul>
-          <li>Grant/Funding 1</li>
-          <li>Grant/Funding 2</li>
-          <li>Grant/Funding 3</li>
-          {/* Add more upcoming grants/funding */}
-        </ul>
+      <div className="opportunities">
+        <h2>Opportunities personalized for you</h2>
+        <div className="list-group">
+          <a href="#" className="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+            <div className="d-flex align-items-center">
+              <img src="/path/to/image.jpg" alt="Image" className="img-thumbnail" />
+              <div className="ml-3">
+                <span className="badge badge-success">$100</span>
+                <span className="ml-1 description">Item 1 Description</span>
+              </div>
+            </div>
+            <span className="due-date">Expires on: 2023-06-30</span>
+          </a>
+          <a href="#" className="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+            <div className="d-flex align-items-center">
+              <img src="/path/to/image.jpg" alt="Image" className="img-thumbnail" />
+              <div className="ml-3">
+                <span className="badge badge-success">$200</span>
+                <span className="ml-1 description">Item 2 Description</span>
+              </div>
+            </div>
+            <span className="due-date">Expires on: 2023-07-15</span>
+          </a>
+          {/* Add more list items */}
+        </div>
       </div>
-      
+
+      <div className="upcoming">
+        <h2>Upcoming opportunities</h2>
+        <div className="list-group">
+          <a href="#" className="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+            <div className="d-flex align-items-center">
+              <img src="/path/to/image.jpg" alt="Image" className="img-thumbnail" />
+              <div className="ml-3">
+                <span className="badge badge-success">$100,000</span>
+                <span className="ml-1 description">Governement of Canada new farmers subsidy</span>
+              </div>
+            </div>
+            <span className="due-date">Available on: 2023-09-19</span>
+          </a>
+          <a href="#" className="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+            <div className="d-flex align-items-center">
+              <img src="/path/to/image.jpg" alt="Image" className="img-thumbnail" />
+              <div className="ml-3">
+                <span className="badge badge-success">$10,000</span>
+                <span className="ml-1 description">Cultivator's 24 hour AgTech startup competition</span>
+              </div>
+            </div>
+            <span className="due-date">Available on: 2024-06-20</span>
+          </a>
+          {/* Add more list items */}
+        </div>
+      </div>
     </div>
   );
 }

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { initializeApp } from 'firebase/app';
 import { getFirestore, collection, getDocs } from 'firebase/firestore';
+import './tutorialScreen.css';
 
 // Firebase configuration
 const firebaseConfig = {
@@ -12,54 +13,82 @@ const firebaseConfig = {
     appId: "1:122720931481:web:97fbca3dd2cc66facef208"
   };
 
+
   const firebaseApp = initializeApp(firebaseConfig);
-const firestore = getFirestore(firebaseApp);
-
-const TutorialScreen = () => {
-  const [tutorialVideos, setTutorialVideos] = useState([]);
-
-  useEffect(() => {
-    // Fetch the list of tutorial videos from Firebase
-    const fetchTutorialVideos = async () => {
-      try {
-        const tutorialsCollectionRef = collection(firestore, 'tutorials');
-        const tutorialsSnapshot = await getDocs(tutorialsCollectionRef);
-        const tutorials = tutorialsSnapshot.docs.map((doc) => doc.data());
-        setTutorialVideos(tutorials);
-      } catch (error) {
-        console.log('Error fetching tutorial videos:', error);
-      }
+  const firestore = getFirestore(firebaseApp);
+  
+  const TutorialScreen = () => {
+    const [tutorialVideos, setTutorialVideos] = useState([]);
+    const [currentVideoIndex, setCurrentVideoIndex] = useState(0);
+  
+    useEffect(() => {
+      // Fetch the list of tutorial videos from Firebase
+      const fetchTutorialVideos = async () => {
+        try {
+          const tutorialsCollectionRef = collection(firestore, 'tutorials');
+          const tutorialsSnapshot = await getDocs(tutorialsCollectionRef);
+          const tutorials = tutorialsSnapshot.docs.map((doc) => doc.data());
+          setTutorialVideos(tutorials);
+        } catch (error) {
+          console.log('Error fetching tutorial videos:', error);
+        }
+      };
+  
+      fetchTutorialVideos();
+    }, []);
+  
+    const handleNextVideo = () => {
+      setCurrentVideoIndex((prevIndex) => prevIndex + 1);
     };
-
-    fetchTutorialVideos();
-  }, []);
-
-  return (
-    <div>
-      <h2>Tutorial Videos</h2>
-      {tutorialVideos.length > 0 ? (
-        <ul>
-          {tutorialVideos.map((tutorial) => (
-            <li key={tutorial.id}>
-              <h3>{tutorial.title}</h3>
-              <p>{tutorial.description}</p>
+  
+    const handlePreviousVideo = () => {
+      setCurrentVideoIndex((prevIndex) => prevIndex - 1);
+    };
+  
+    return (
+      <div className="tutorial-screen">
+        <div className="side-menu">
+          <h3>Tutorial Menu</h3>
+          <ul>
+            {tutorialVideos.map((video, index) => (
+              <li key={index}>
+                <button onClick={() => setCurrentVideoIndex(index)}>{video.title}</button>
+              </li>
+            ))}
+          </ul>
+        </div>
+        {tutorialVideos.length > 0 && currentVideoIndex < tutorialVideos.length ? (
+          <div className="video-container">
+            <h2>{tutorialVideos[currentVideoIndex].title}</h2>
+            <p>{tutorialVideos[currentVideoIndex].description}</p>
+            <div className="video-wrapper">
               <iframe
-                width="560"
-                height="315"
-                src={`https://www.youtube.com/embed/${tutorial.videoId}`}
-                title="YouTube video player"
+                className="video-iframe"
+                src={`https://www.youtube.com/embed/${tutorialVideos[currentVideoIndex].videoId}`}
                 frameBorder="0"
+                allow="autoplay; encrypted-media"
                 allowFullScreen
+                title="Tutorial Video"
               ></iframe>
-              <p>Duration: {tutorial.duration}</p>
-            </li>
-          ))}
-        </ul>
-      ) : (
-        <p>Loading tutorial videos...</p>
-      )}
-    </div>
-  );
-};
-
-export default TutorialScreen;
+            </div>
+            {currentVideoIndex > 0 && (
+              <button className="previous-button" onClick={handlePreviousVideo}>
+                Previous
+              </button>
+            )}
+            {currentVideoIndex < tutorialVideos.length - 1 && (
+              <button className="next-button" onClick={handleNextVideo}>
+                Next
+              </button>
+            )}
+          </div>
+        ) : (
+          <div className="video-container">
+            <p>No tutorial videos available.</p>
+          </div>
+        )}
+      </div>
+    );
+  };
+  
+  export default TutorialScreen;
