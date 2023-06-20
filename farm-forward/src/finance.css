@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway|Montserrat');
+
+:root {
+    --color-title-green: #29432e;
+    --color-green-1: #417505;
+    --color-green-light: #d8e5bc;
+    --color-green-light-2: #ecf1e4;
+    --color-green-light-3: #d6e2c8;
+    --color-light-grey: #f9faf9;
+    --color-white: #fafbfa;
+}
+
+h1, h2, h3 {
+  font-family: 'Raleway', sans-serif;
+  color: var(--color-title-green);
+}
+
+p, body {
+  font-family: 'Montserrat', sans-serif;
+  color: var(--color-green-1);
+}
