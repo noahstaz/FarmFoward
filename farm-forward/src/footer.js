@@ -7,7 +7,7 @@ import {
     faInstagram,
 } from "@fortawesome/free-brands-svg-icons";
 import './footer.css';
-import Photo from './images/logo192.png';
+import Photo from './images/logo.svg';
 
 const Footer = () => {
     return (
@@ -15,7 +15,7 @@ const Footer = () => {
         <div className="footer-container">
           <div className="company-info">
             <img src={Photo} alt="Company Logo" className="logo" />
-            <h3 className="company-name">FastForward</h3>
+            {/* <h3 className="company-name">FastForward</h3> */}
           </div>
           <div className="item2">
             <span className="copyright">

@@ -1,6 +1,6 @@
 import React from 'react';
 import './header.css'
-import Photo from './images/FarmForwardLogo.png';
+import Photo from './images/logo.svg';
 
 const Header = ({loggedInUser }) => {
   return (
@@ -11,8 +11,9 @@ const Header = ({loggedInUser }) => {
       </div>
       <nav className="header-middle">
         <ul>
-          <li className='mx-3'><a href="/grants">Grants</a></li>
-          <li className='mx-3'><a href="/resources">Resources</a></li>
+            <li className='mx-3'><a href="/home">Home</a></li>
+          <li className='mx-3'><a href="/finance">Funding</a></li>
+          <li className='mx-3'><a href="/tutorials">Learning</a></li>
           <li className='mx-3'><a href="/equipment">Equipment</a></li>
         </ul>
       </nav>

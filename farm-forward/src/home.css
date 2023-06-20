@@ -17,23 +17,23 @@
 
 .card-width > .card{
     box-shadow: 0 2.125rem 1.25rem rgba(0, 0, 0, 0.095) !important;
-    background-color: rgb(37,232,128);
+    background-color: #40b93c;
     border: none;
 }
 
 .customCard{
     box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.095) !important;
-    background-color: rgb(255, 255, 255);
+    background-color: #40b93c;
     border: none;
 }
 
-.card-width > .card > .card-body h4{
+h4, h2{
     font-weight: 1000;
 }
 
 .carousel-images {
-  width: 50%;
-  height: 50%;
+  width: 99%;
+  height: 250px;
   object-fit: cover;
 }
 
@@ -74,6 +74,14 @@
   }  
 
   .bb{
-    background-color: rgb(37,232,128);
+    background-color: #40b93c;
     margin: 0 !important;
+  }
+
+  /* .priceModel{
+    height: 400px;
+  } */
+
+  .card-no-border{
+    border: none;
   }
