@@ -11,20 +11,25 @@ p {
 
 
 .tutorial-screen {
-    display: flex;
-    justify-content: flex-start;
-    align-items: stretch;
-    height: 100vh;
-    width: 100%;
-    overflow: hidden;
-    background-color: #e8f5e9; /* Light green */
-  }
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  background-color: #e8f5e9; /* Light green */
+  padding-bottom: 20px; 
+}
   
   .side-menu {
     width: 200px;
-    background-color: #c8e6c9; /* Lighter green */
+    background-color: #40b93c; /* Lighter green */
     padding: 20px;
-    overflow-y: auto;
+    overflow-y: visible;
+  }
+
+  .side-menu button:hover {
+    background-color: #ffff; 
   }
   
   .video-container {
@@ -36,13 +41,14 @@ p {
     flex-direction: column;
     align-items: center;
     box-sizing: border-box;
-    overflow: auto;
+    overflow: visible;
   }
   
   .video-container h2 {
     font-size: 24px;
     margin-bottom: 10px;
-    color: #4caf50; /* Dark green */
+    color: #ffffff; /* Dark green */
+    display: flex;
   }
   
   .video-wrapper {
@@ -57,7 +63,7 @@ p {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 90%;
   }
   
   .description {
@@ -72,11 +78,29 @@ p {
     width: 100%;
     margin-top: 10px;
   }
+
+  .next-button-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 10px;
+    margin-left: 80%;
+  }
+
+  .prev-button-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 10px;
+    margin-right: 70%;
+  }
   
   .previous-button,
   .next-button {
     padding: 10px 20px;
-    background-color: #4caf50; /* Dark green */
+    background-color: #40b93c; /* Dark green */
     color: #ffffff; /* White */
     border: none;
     border-radius: 4px;
