@@ -3,6 +3,7 @@ import { initializeApp } from 'firebase/app';
 import { getFirestore, collection, getDocs } from 'firebase/firestore';
 import './tutorialScreen.css';
 import Header from './header';
+import Footer from './footer';
 
 // Firebase configuration
 const firebaseConfig = {
@@ -47,8 +48,10 @@ const firebaseConfig = {
     };
   
     return (
+      <>
+      <Header />
       <div className="tutorial-screen">
-        {/* <Header /> */}
+        
         <div className="side-menu">
           <h3>Tutorials</h3>
           <ul>
@@ -90,6 +93,8 @@ const firebaseConfig = {
           </div>
         )}
       </div>
+      <Footer/>
+      </>
     );
   };
   
