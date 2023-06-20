@@ -1,4 +1,14 @@
 /* tutorialScreen.css */
+@import url('https://fonts.googleapis.com/css?family=Raleway|Montserrat');
+
+h1, h2, h3 {
+    font-family: 'Raleway', sans-serif;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+}
+
 
 .tutorial-screen {
     display: flex;
