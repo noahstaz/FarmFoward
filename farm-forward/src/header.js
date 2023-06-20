@@ -1,10 +1,12 @@
 import React from 'react';
+import './App.css'
+import Photo from './images/logo192.png';
 
 const Header = ({loggedInUser }) => {
   return (
     <header>
       <div className="header-left">
-        <img src="/path/to/logo.png" alt="Company Logo" />
+        <img src={Photo} alt="Company Logo" />
         <span className="company-name">Farm Forwarding</span>
       </div>
       <nav className="header-middle">

@@ -7,16 +7,13 @@ import Header from './header';
 import OnboardingScreen from './onboardingScreen';
 import Finance from './finance';
 
-function App() {
+const  App = () => {
   return (
     <BrowserRouter>
       <Switch>
-        <Route path="/">
-          <OnboardingScreen/>
-        </Route>
-        <Route path="/finance">
-          <Finance/>
-        </Route>
+        <Route exact path="/" component={OnboardingScreen} />
+        <Route path="/finance" component={Finance} />
+        <Route exact path="/header" component={Header} />
       </Switch>
     
     </BrowserRouter>
