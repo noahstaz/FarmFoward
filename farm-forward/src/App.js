@@ -4,7 +4,8 @@ import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import './App.css';
 import Header from './header';
-import OnboardingScreen from './onboardingScreen'
+import OnboardingScreen from './onboardingScreen';
+import Finance from './finance';
 
 function App() {
   return (
@@ -13,8 +14,8 @@ function App() {
         <Route path="/">
           <OnboardingScreen/>
         </Route>
-        <Route path="/">
-          <OnboardingScreen/>
+        <Route path="/finance">
+          <Finance/>
         </Route>
       </Switch>
     
