@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import Header from './header';
+import Finance from './finance'
 
 function App() {
   return (
