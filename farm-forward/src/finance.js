@@ -1,10 +1,13 @@
 import React from 'react';
 import './finance.css';
 import 'bootstrap/dist/css/bootstrap.css';
+import Footer from './footer';
+import Header from './header';
 
 function FinancePage() {
   return (
-    <div className="background">
+    <div className="financeMain">
+      <Header/>
       <div className="head">
         <div className="subTitle">Funding Opportunities</div>
       </div>
@@ -16,7 +19,7 @@ function FinancePage() {
             <div className="d-flex align-items-center">
             <img src={require("./images/fcc.jpg")} alt="Image" className="img-thumbnail" />
               <div className="ml-3">
-                <span className="badge badge-success">$1,000,000</span>
+                <span className="dollar">$1,000,000</span>
                 <span className="ml-1 description">FCC loan for diverse candidates purchasing equipment</span>
               </div>
             </div>
@@ -26,7 +29,7 @@ function FinancePage() {
             <div className="d-flex align-items-center">
             <img src={require("./images/regina.png")} alt="Image" className="img-thumbnail" />
               <div className="ml-3">
-                <span className="badge badge-success">$20,000</span>
+                <span className="dollar">$20,000</span>
                 <span className="ml-1 description">City of Regina grant for family farms</span>
               </div>
             </div>
@@ -43,7 +46,7 @@ function FinancePage() {
             <div className="d-flex align-items-center">
             <img src={require("./images/canada.jpg")} alt="Image" className="img-thumbnail" />
               <div className="ml-3">
-                <span className="badge badge-success">$100,000</span>
+                <span className="dollar">$100,000</span>
                 <span className="ml-1 description">Governement of Canada new farmers subsidy</span>
               </div>
             </div>
@@ -53,7 +56,7 @@ function FinancePage() {
             <div className="d-flex align-items-center">
             <img src={require("./images/Cultivator.jpg")} alt="Image" className="img-thumbnail" />
               <div className="ml-3">
-                <span className="badge badge-success">$10,000</span>
+                <span className="dollar">$10,000</span>
                 <span className="ml-1 description">Cultivator's 24 hour AgTech startup competition</span>
               </div>
             </div>
@@ -62,6 +65,7 @@ function FinancePage() {
           {/* Add more list items */}
         </div>
       </div>
+      <Footer/>
     </div>
   );
 }
