@@ -56,7 +56,7 @@ function EquipmentPage() {
             <div className="d-flex align-items-center">
             <img src={require("./images/elevator.webp")} alt="Image" className="img-thumbnail" />
               <div className="ml-3">
-                <span className="dollar">$2,000/mo</span>
+                <span className="dollar">$2,000/month</span>
                 <span className="ml-1 description">South Saskatchewan Grain Elevator</span>
               </div>
             </div>
