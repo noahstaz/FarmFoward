@@ -9,7 +9,34 @@ function EquipmentPage() {
         <div className="financeMain">
       <Header/>
       <div className="head">
-        <div className="subTitle">Equipment & Land</div>
+        <div className="subTitle">Land  & Equipment</div>
+      </div>
+
+      <div className="upcoming">
+        <h2>Land for Sale Near You</h2>
+        <div className="list-group">
+          <a href="#" className="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+            <div className="d-flex align-items-center">
+            <img src={require("./images/AcresForSale1.jpg")} alt="Image" className="img-thumbnail" />
+              <div className="ml-3">
+                <span className="dollar">$14,800</span>
+                <span className="ml-1 description">162 South West quarter of Section 1, Township 1, Range 12, West of the 1st Meridian</span>
+              </div>
+            </div>
+            <span className="due-date">Date posted: 2023-05-24</span>
+          </a>
+          <a href="#" className="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+            <div className="d-flex align-items-center">
+            <img src={require("./images/AcresForSale2webp.webp")} alt="Image" className="img-thumbnail" />
+              <div className="ml-3">
+                <span className="dollar">$65,000</span>
+                <span className="ml-1 description">210 Acres North West quarter of Section 1, Township 21, Range 1, West of the 2nd Meridian</span>
+              </div>
+            </div>
+            <span className="due-date">Date posted: 2023-06-04</span>
+          </a>
+          {/* Add more list items */}
+        </div>
       </div>
 
       <div className="opportunities">
@@ -66,32 +93,7 @@ function EquipmentPage() {
         </div>
       </div>
 
-      <div className="upcoming">
-        <h2>Land for Sale Near You</h2>
-        <div className="list-group">
-          <a href="#" className="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
-            <div className="d-flex align-items-center">
-            <img src={require("./images/Baler.jpg")} alt="Image" className="img-thumbnail" />
-              <div className="ml-3">
-                <span className="dollar">$14,800</span>
-                <span className="ml-1 description">10 Acres South-Easter Saskatchewan</span>
-              </div>
-            </div>
-            <span className="due-date">Date posted: 2023-05-24</span>
-          </a>
-          <a href="#" className="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
-            <div className="d-flex align-items-center">
-            <img src={require("./images/elevator.webp")} alt="Image" className="img-thumbnail" />
-              <div className="ml-3">
-                <span className="dollar">$65,000</span>
-                <span className="ml-1 description">50 Acres in Northern Saskatchewan</span>
-              </div>
-            </div>
-            <span className="due-date">Date posted: 2023-06-04</span>
-          </a>
-          {/* Add more list items */}
-        </div>
-      </div>
+    
       <Footer/>
     </div>
 );
