@@ -10,6 +10,8 @@ import Funding1 from './images/funding1.png';
 import Funding2 from './images/funding2.png';
 import Learning1 from './images/learning1.png';
 import Learning2 from './images/learning2.png';
+import Equipment1 from './images/equipment1.jpg';
+import Equipment2 from './images/equipment2.jpeg';
 import PriceModel from './images/priceModel.png';
 import Footer from './footer';
 //import { NavLink, Outlet } from 'react-router-dom';
@@ -85,7 +87,7 @@ function Home() {
                             <div className='card-body'>
                                 <h4 className='card-title font-weight-bold'>Learning</h4>
                                 <p className='card-text'>
-                                Now, when you run your React application, you will see a navigation menu with links to the Home and About pages. Clicking on each link will render the corresponding component below the navigation menu.
+                                Our innovative web app is a game-changer for both young and seasoned farmers, providing a platform to learn and master cutting-edge farming techniques. With user-friendly interfaces and comprehensive resources, we empower farmers of all ages to enhance their skills, boost productivity, and stay ahead in the ever-evolving agricultural landscape. Experience a digital revolution in farming education and unleash your farming potential with our intuitive web app.
                                 </p>
                             </div>
                         </div>
@@ -98,7 +100,7 @@ function Home() {
                             <div className='card-body'>
                                 <h4 className='card-title font-weight-bold'>Equipments</h4>
                                 <p className='card-text'>
-                                Now, when you run your React application, you will see a navigation menu with links to the Home and About pages. Clicking on each link will render the corresponding component below the navigation menu.
+                                We stock a comprehensive, reliable array of tools and equipment that you can trust in an industry that requires safe, unique processes with specialized equipment, no matter what Mother Nature throws at you. Whether your project involves forest harvesting, wood extraction, reforestation, etc., we provide you with the right piece of equipment.
                                 </p>
                             </div>
                         </div>
@@ -107,18 +109,20 @@ function Home() {
                     <div className="col-4 carousel-container text-center card-align">
                         <Carousel className="carousel" interval={3000}>
                             <Carousel.Item>
-                                <img src={Funding1} className="carousel-images" alt="..." />
+                                <img src={Equipment1} className="carousel-images" alt="..." />
                             </Carousel.Item>
                             <Carousel.Item>
-                                <img src={Funding2} className="carousel-images" alt="..." />
+                                <img src={Equipment2} className="carousel-images" alt="..." />
                             </Carousel.Item>  
                         </Carousel>
                     </div>
                 </div>
-                <div className='section card card-no-border'>
-                    <div className='card-body priceModel'>
+                <div className='section card card-no-border customCard'>
+                    <div className='card-body'>
                         <h2 className='card-title font-weight-bold'>Our Price Model</h2>
-                        <img src={PriceModel}></img>
+                        <div className='priceModel text-center'>
+                            <img src={PriceModel}></img>
+                        </div>
                     </div>
                 </div>
             </div>
