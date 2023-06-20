@@ -78,9 +78,9 @@ h4, h2{
     margin: 0 !important;
   }
 
-  /* .priceModel{
+  .priceModel{
     height: 400px;
-  } */
+  }
 
   .card-no-border{
     border: none;

@@ -116,9 +116,9 @@ function Home() {
                     </div>
                 </div>
                 <div className='section card card-no-border'>
-                    <div className='card-body'>
+                    <div className='card-body priceModel'>
                         <h2 className='card-title font-weight-bold'>Our Price Model</h2>
-                        <img className='priceModel' src={PriceModel}></img>
+                        <img src={PriceModel}></img>
                     </div>
                 </div>
             </div>
