@@ -49,6 +49,29 @@ img {
 }
 
 .head {
-    background-image: src("./images/TreeBackground.jpg");
-    background-color: #333;
+    background-image: url("./images/TreeBackground.jpg");
+    /*-webkit-filter: blur(2px);
+  filter: blur(2px);*/
+    backdrop-filter: sepia(.4);
+    filter: sepia(.4);
+    height: 14em;
+    display: flex;
+    align-items: center;
+}
+
+.background {
+    background-image: url("./images/TreeBackground.jpg");
+    /*-webkit-filter: blur(2px);
+  filter: blur(2px);*/
+    backdrop-filter: sepia(.4);
+    filter: sepia(.4);
+    height: 14em;
+    display: flex;
+    align-items: center;
+}
+
+.subTitle {
+    margin-left: 2em;
+    color: white;
+    font-size: 64px;
 }
