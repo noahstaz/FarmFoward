@@ -43,3 +43,18 @@
       transform: translateX(0);
     }
   }  
+
+  .bb{
+    background-color: #32CD32;
+  }
+
+  .custom-shape-divider-top-1687254410 svg {
+    position: relative;
+    display: block;
+    width: calc(130% + 1.3px);
+    height: 107px;
+}
+
+.custom-shape-divider-top-1687254410 .shape-fill {
+    fill: #25E880;
+}
