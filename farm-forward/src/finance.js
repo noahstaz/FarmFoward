@@ -1,12 +1,10 @@
 import React from 'react';
 import './finance.css';
 import 'bootstrap/dist/css/bootstrap.css';
-import HappyFarmer from './images/happy.webp';
-import HeadBG from './images/TreeBackground.jpg';
 
 function FinancePage() {
   return (
-    <div>
+    <div className="background">
       <div className="head">
         <div className="subTitle">Funding Opportunities</div>
       </div>

@@ -37,6 +37,9 @@
   object-fit: cover;
 }
 
+.sections{
+    margin: 100px 10px !important;
+}
 
 .fade-left {
     opacity: 0;
