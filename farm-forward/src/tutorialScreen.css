@@ -20,7 +20,7 @@
   .video-container {
     flex: 1;
     max-width: calc(100% - 200px);
-    padding: 20px;
+    padding: 10px;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -37,9 +37,9 @@
   
   .video-wrapper {
     position: relative;
-    width: 70%;
-    padding-bottom: 56.25%; /* 16:9 aspect ratio */
-    margin-bottom: 20px;
+    width: 100%;
+    padding-bottom: 42.1875%; /* 16:9 aspect ratio */
+    margin-bottom: 10px;
   }
   
   .video-iframe {
@@ -60,7 +60,7 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    margin-top: 20px;
+    margin-top: 10px;
   }
   
   .previous-button,
