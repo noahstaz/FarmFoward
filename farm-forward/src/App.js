@@ -7,6 +7,7 @@ import Finance from './finance';
 import Home from './home';
 import Footer from './footer';
 import TutorialScreen from './tutorialScreen';
+import EquipmentPage from './equipment';
 
 const  App = () => {
   return (
@@ -18,6 +19,7 @@ const  App = () => {
         <Route exact path="/home" component={Home} />
        < Route exact path="/footer" component={Footer} />
         <Route exact path="/tutorials" component={TutorialScreen} />
+        <Route exact path="/equipment" component={EquipmentPage} />
       </Switch>
     
     </BrowserRouter>

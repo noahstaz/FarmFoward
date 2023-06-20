@@ -71,7 +71,6 @@ img {
 
 .head {
     background-image: url("./images/FinanceTreeBackground3.jpg");
-
     backdrop-filter: sepia(.4);
     filter: sepia(.4);
     height: 10em;
@@ -96,15 +95,21 @@ img {
   margin-left: 3em;
   margin-right: 3em;
   margin-top: 2em;
+  color: var(--text-color1);
 }
 
 .upcoming {
   margin-left: 3em;
   margin-right: 3em;
   margin-top: 2em;
+  color: var(--text-color1);
 }
 
 .list-group {
   margin-top: 2em;
   margin-bottom: 2em;
+}
+
+.financeMain {
+  background-color: var(--background-color);
 }
