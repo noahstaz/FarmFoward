@@ -5,6 +5,7 @@ import Header from './header';
 import OnboardingScreen from './onboardingScreen';
 import Finance from './finance';
 import Home from './home';
+import Footer from './footer';
 import TutorialScreen from './tutorialScreen';
 
 const  App = () => {
@@ -15,6 +16,7 @@ const  App = () => {
         <Route path="/finance" component={Finance} />
         <Route exact path="/header" component={Header} />
         <Route exact path="/home" component={Home} />
+       < Route exact path="/footer" component={Footer} />
         <Route exact path="/tutorials" component={TutorialScreen} />
       </Switch>
     

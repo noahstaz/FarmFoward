@@ -1,0 +1,83 @@
+/* tutorialScreen.css */
+
+.tutorial-screen {
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    background-color: #e8f5e9; /* Light green */
+  }
+  
+  .side-menu {
+    width: 200px;
+    background-color: #c8e6c9; /* Lighter green */
+    padding: 20px;
+    overflow-y: auto;
+  }
+  
+  .video-container {
+    flex: 1;
+    max-width: calc(100% - 200px);
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    overflow: auto;
+  }
+  
+  .video-container h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #4caf50; /* Dark green */
+  }
+  
+  .video-wrapper {
+    position: relative;
+    width: 100%;
+    padding-bottom: 42.1875%; /* 16:9 aspect ratio */
+    margin-bottom: 10px;
+  }
+  
+  .video-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .description {
+    text-align: left;
+    color: #333333; /* Dark gray */
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 10px;
+  }
+  
+  .previous-button,
+  .next-button {
+    padding: 10px 20px;
+    background-color: #4caf50; /* Dark green */
+    color: #ffffff; /* White */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .previous-button {
+    order: 1;
+  }
+  
+  .next-button {
+    order: 3;
+  }
+  
