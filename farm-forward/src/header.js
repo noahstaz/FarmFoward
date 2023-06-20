@@ -1,5 +1,5 @@
 import React from 'react';
-import './App.css'
+import './header.css'
 import Photo from './images/logo192.png';
 
 const Header = ({loggedInUser }) => {
@@ -12,12 +12,13 @@ const Header = ({loggedInUser }) => {
       <nav className="header-middle">
         <ul>
           <li><a href="/">Home</a></li>
-          <li><a href="/about">About</a></li>
-          <li><a href="/contact">Contact</a></li>
+          <li><a href="/grants">Grants</a></li>
+          <li><a href="/resources">Resources</a></li>
+          <li><a href="/equipment">Equipment</a></li>
         </ul>
       </nav>
       <div className="header-right">
-        <span className="username">{loggedInUser}</span>
+        <span className="username">Hello, User</span>
       </div>
     </header>
   );
