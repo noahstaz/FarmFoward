@@ -6,7 +6,7 @@ import './App.css';
 import Header from './header';
 import OnboardingScreen from './onboardingScreen';
 import Finance from './finance';
-// import TutorialScreen from './tutorialScreen';
+import TutorialScreen from './tutorialScreen';
 
 const  App = () => {
   return (
@@ -15,6 +15,7 @@ const  App = () => {
         <Route exact path="/" component={OnboardingScreen} />
         <Route path="/finance" component={Finance} />
         <Route exact path="/header" component={Header} />
+        <Route exact path="/tutorials" component={TutorialScreen} />
       </Switch>
     
     </BrowserRouter>

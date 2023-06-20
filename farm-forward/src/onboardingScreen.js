@@ -53,7 +53,9 @@ const SignUpForm = () => {
             placeholder="Email"
           />
         </div>
-        <button type="submit">Next</button>
+        <div className="button-container">
+          <button type="submit" className="next-button">Next</button>
+        </div>
       </form>
     </div>
   );
