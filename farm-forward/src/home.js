@@ -3,7 +3,7 @@ import Header from './header';
 import './home.css';
 import ScrollAnimation from 'react-animate-on-scroll';
 import "animate.css/animate.min.css";
-import FarmingVideo from './images/farming-video.mp4'
+import FarmingVideo from './images/farmvideo.mp4'
 //import Footer from './footer';
 //import { NavLink, Outlet } from 'react-router-dom';
 
@@ -17,7 +17,7 @@ function Home() {
                 {/* <ScrollAnimation duration={2}
                     animateIn="animate__fadeInLeft"> */}
                     <div className="col-6">
-                            <video className='farming-video' src={FarmingVideo} autoplay loop muted/>
+                            <video className='farming-video' src={FarmingVideo} autoPlay loop muted playsInline/>
                     </div>
                     <div className="col-6">
                         <div className='card border-light text-center'>
@@ -29,14 +29,15 @@ function Home() {
                             </div>
                         </div>
                     </div>
+                
                 {/* </ScrollAnimation> */}
             </div>
+            
 
-            {/* <div className="section_i">
+            <div className="section_i">
                 <ScrollAnimation duration={2}
                     animateIn="animate__fadeInUp">
-                    <div className="section_i_heading">Wait..,</div>
-                    <div className="section_i_heading">But what actual problem is ?</div>
+                    <div className="section_i_heading">Grants</div>
                 </ScrollAnimation>
                 <br />
                 <br />
@@ -47,9 +48,6 @@ function Home() {
                 <br />
                 <br />
                 <br />
-                <ScrollAnimation duration={2}
-                    animateIn="animate__fadeInUp">                <div className="section_i_heading">How we tend to solve it?</div><br />
-                </ScrollAnimation>
                 <br />
                 <ScrollAnimation duration={2}
                     animateIn="animate__fadeInUp">
@@ -102,7 +100,7 @@ function Home() {
                 </div>
             </div>
             <br />
-            <br /> */}
+            <br /> 
 
         </div>
         </div>
