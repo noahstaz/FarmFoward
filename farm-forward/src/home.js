@@ -35,7 +35,7 @@ function Home() {
                             <div className='card-body'>
                                 <h4 className='card-title text-white'>Our Mission</h4>
                                 <p className='card-text text-white'>
-                                Now, when you run your React application, you will see a navigation menu with links to the Home and About pages. Clicking on each link will render the corresponding component below the navigation menu.
+                                “FarmForward: Cultivating the Future of Agriculture. We’re dedicated to bridging the generational gap, ensuring knowledge and tradition are passed down from seasoned farmers to the motivated, aspiring young professionals. Together, we’re seeding change, growing opportunities, and nourishing the future of farming”
                                 </p>
                             </div>
                         </div>
