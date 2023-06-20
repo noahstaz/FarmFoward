@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './onboardingScreen.css';
 
 const SignUpForm = () => {
   const [name, setName] = useState('');
@@ -23,36 +24,38 @@ const SignUpForm = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <div>
-        <label htmlFor="name">Name:</label>
-        <input
-          type="text"
-          id="name"
-          value={name}
-          onChange={handleNameChange}
-        />
-      </div>
-      <div>
-        <label htmlFor="phoneNumber">Phone Number:</label>
-        <input
-          type="text"
-          id="phoneNumber"
-          value={phoneNumber}
-          onChange={handlePhoneNumberChange}
-        />
-      </div>
-      <div>
-        <label htmlFor="email">Email:</label>
-        <input
-          type="email"
-          id="email"
-          value={email}
-          onChange={handleEmailChange}
-        />
-      </div>
-      <button type="submit">Next</button>
-    </form>
+    <div className="centered-box">
+      <form onSubmit={handleSubmit}>
+        <div>
+          <input
+            type="text"
+            id="name"
+            value={name}
+            onChange={handleNameChange}
+            placeholder="Name"
+          />
+        </div>
+        <div>
+          <input
+            type="text"
+            id="phoneNumber"
+            value={phoneNumber}
+            onChange={handlePhoneNumberChange}
+            placeholder="Phone Number"
+          />
+        </div>
+        <div>
+          <input
+            type="email"
+            id="email"
+            value={email}
+            onChange={handleEmailChange}
+            placeholder="Email"
+          />
+        </div>
+        <button type="submit">Next</button>
+      </form>
+    </div>
   );
 };
 
