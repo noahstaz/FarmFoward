@@ -16,23 +16,23 @@ function FinancePage() {
         <div className="list-group">
           <a href="#" className="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
             <div className="d-flex align-items-center">
-              <img src="/path/to/image.jpg" alt="Image" className="img-thumbnail" />
+            <img src={require("./images/fcc.jpg")} alt="Image" className="img-thumbnail" />
               <div className="ml-3">
-                <span className="badge badge-success">$100</span>
-                <span className="ml-1 description">Item 1 Description</span>
+                <span className="badge badge-success">$1,000,000</span>
+                <span className="ml-1 description">FCC loan for diverse candidates purchasing equipment</span>
               </div>
             </div>
-            <span className="due-date">Expires on: 2023-06-30</span>
+            <span className="due-date">Expires on: 2023-07-30</span>
           </a>
           <a href="#" className="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
             <div className="d-flex align-items-center">
-              <img src="/path/to/image.jpg" alt="Image" className="img-thumbnail" />
+            <img src={require("./images/regina.png")} alt="Image" className="img-thumbnail" />
               <div className="ml-3">
-                <span className="badge badge-success">$200</span>
-                <span className="ml-1 description">Item 2 Description</span>
+                <span className="badge badge-success">$20,000</span>
+                <span className="ml-1 description">City of Regina grant for family farms</span>
               </div>
             </div>
-            <span className="due-date">Expires on: 2023-07-15</span>
+            <span className="due-date">Expires on: 2023-09-15</span>
           </a>
           {/* Add more list items */}
         </div>
@@ -43,7 +43,7 @@ function FinancePage() {
         <div className="list-group">
           <a href="#" className="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
             <div className="d-flex align-items-center">
-              <img src="/path/to/image.jpg" alt="Image" className="img-thumbnail" />
+            <img src={require("./images/canada.jpg")} alt="Image" className="img-thumbnail" />
               <div className="ml-3">
                 <span className="badge badge-success">$100,000</span>
                 <span className="ml-1 description">Governement of Canada new farmers subsidy</span>
@@ -53,7 +53,7 @@ function FinancePage() {
           </a>
           <a href="#" className="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
             <div className="d-flex align-items-center">
-              <img src="/path/to/image.jpg" alt="Image" className="img-thumbnail" />
+            <img src={require("./images/Cultivator.jpg")} alt="Image" className="img-thumbnail" />
               <div className="ml-3">
                 <span className="badge badge-success">$10,000</span>
                 <span className="ml-1 description">Cultivator's 24 hour AgTech startup competition</span>
