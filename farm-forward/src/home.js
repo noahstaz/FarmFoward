@@ -6,9 +6,11 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import "animate.css/animate.min.css";
 import { Carousel } from 'react-bootstrap';
 import FarmingVideo from './images/farming-video.mp4';
-import Image1 from './images/canada.jpg';
-import Image2 from './images/Cultivator.jpg';
-import Image3 from './images/fcc.jpg';
+import Funding1 from './images/funding1.png';
+import Funding2 from './images/funding2.png';
+import Learning1 from './images/learning1.png';
+import Learning2 from './images/learning2.png';
+import PriceModel from './images/priceModel.png';
 import Footer from './footer';
 //import { NavLink, Outlet } from 'react-router-dom';
 
@@ -43,51 +45,45 @@ function Home() {
             <div className='m-5'>
                 <div className='sections row fade-right'>
                     <div className='col-1'></div>
-                    <div className="col-4">
+                    <div className="col-5 card-align">
                         <div className='card customCard text-center'>
                             <div className='card-body'>
-                                <h4 className='card-title font-weight-bold'>Grants</h4>
+                                <h4 className='card-title font-weight-bold'>Funding</h4>
                                 <p className='card-text'>
-                                Now, when you run your React application, you will see a navigation menu with links to the Home and About pages. Clicking on each link will render the corresponding component below the navigation menu.
+                                Farmers in Saskatchewan can access grants for various purposes, including equipment and infrastructure upgrades, research and development initiatives, environmental stewardship projects, and farmer training programs.  Through these grants, Saskatchewan continues to encourage and empower its farming community to thrive and meet the evolving challenges of the agricultural industry.
                                 </p>
                             </div>
                         </div>
                     </div>
-                    <div className="col-2"/>
-                    <div className="col-4 carousel-container text-center">
+                    <div className="col-1"/>
+                    <div className="col-4 carousel-container text-center card-align">
                         <Carousel className="carousel" interval={3000}>
                             <Carousel.Item>
-                                <img src={Image2} className="carousel-images" alt="..." />
+                                <img src={Funding1} className="carousel-images" alt="..." />
                             </Carousel.Item>
                             <Carousel.Item>
-                                <img src={Image1} className="carousel-images" alt="..." />
-                            </Carousel.Item>
-                            <Carousel.Item>
-                                <img src={Image3} className="carousel-images" alt="..." />
-                            </Carousel.Item>    
+                                <img src={Funding2} className="carousel-images" alt="..." />
+                            </Carousel.Item>   
                         </Carousel>
                     </div>
                 </div>
                 <div className='sections row fade-right'>
                         <div className="col-1"/>
-                        <div className="col-4 carousel-container text-center">
+                        <div className="col-4 carousel-container text-center card-align">
                             <Carousel className="carousel" interval={3000}>
                                 <Carousel.Item>
-                                    <img src={Image2} className="carousel-images" alt="..." />
+                                    <img src={Learning1} className="carousel-images" alt="..." />
                                 </Carousel.Item>
                                 <Carousel.Item>
-                                    <img src={Image1} className="carousel-images" alt="..." />
-                                </Carousel.Item>
-                                <Carousel.Item>
-                                    <img src={Image3} className="carousel-images" alt="..." />
-                                </Carousel.Item>    
+                                    <img src={Learning2} className="carousel-images" alt="..." />
+                                </Carousel.Item>   
                             </Carousel>
                         </div>
                         <div className="col-2"/>
-                    <div className="col-4">
+                    <div className="col-5 card-align ">
                         <div className='card customCard text-center'>
                             <div className='card-body'>
-                                <h4 className='card-title font-weight-bold'>Tutorials</h4>
+                                <h4 className='card-title font-weight-bold'>Learning</h4>
                                 <p className='card-text'>
                                 Now, when you run your React application, you will see a navigation menu with links to the Home and About pages. Clicking on each link will render the corresponding component below the navigation menu.
                                 </p>
@@ -97,7 +93,7 @@ function Home() {
                 </div>
                 <div className='sections row fade-right'>
                     <div className='col-1'></div>
-                    <div className="col-4">
+                    <div className="col-5 card-align">
                         <div className='card customCard text-center'>
                             <div className='card-body'>
                                 <h4 className='card-title font-weight-bold'>Equipments</h4>
@@ -107,19 +103,22 @@ function Home() {
                             </div>
                         </div>
                     </div>
-                    <div className="col-2"/>
-                    <div className="col-4 carousel-container text-center">
+                    <div className="col-1"/>
+                    <div className="col-4 carousel-container text-center card-align">
                         <Carousel className="carousel" interval={3000}>
                             <Carousel.Item>
-                                <img src={Image2} className="carousel-images" alt="..." />
+                                <img src={Funding1} className="carousel-images" alt="..." />
                             </Carousel.Item>
                             <Carousel.Item>
-                                <img src={Image1} className="carousel-images" alt="..." />
-                            </Carousel.Item>
-                            <Carousel.Item>
-                                <img src={Image3} className="carousel-images" alt="..." />
-                            </Carousel.Item>    
+                                <img src={Funding2} className="carousel-images" alt="..." />
+                            </Carousel.Item>  
                         </Carousel>
+                    </div>
+                </div>
+                <div className='section card card-no-border'>
+                    <div className='card-body'>
+                        <h2 className='card-title font-weight-bold'>Our Price Model</h2>
+                        <img className='priceModel' src={PriceModel}></img>
                     </div>
                 </div>
             </div>

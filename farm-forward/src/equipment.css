@@ -3,16 +3,16 @@
 :root {
   --background-color: #f5f5f0;
   --text-box-color: #e8e8e8;
-  --text-color1: #00361f;
-  --text-color2: #37782C;
-  --text-color3: #64BB6A;
+  --green1: #00361f;
+  --green2: #37782C;
+  --green3: #40b93c;
   --cream-color1: #FFFDD2;
   --cream-color2: #F9FAE3;
 }
 
 .img-thumbnail {
-    width: 100px;
-    height:100px;
+    width: 200px;
+    height:200px;
     margin-right: 25px;
   }
   
@@ -73,7 +73,7 @@
       background-image: url("./images/FinanceTreeBackground3.jpg");
       backdrop-filter: sepia(.4);
       filter: sepia(.4);
-      height: 14em;
+      height: 10em;
       background-position: center;
       background-size: cover;
       display: flex;
@@ -83,8 +83,7 @@
   
   .subTitle {
       margin-left: 2em;
-      margin-bottom: 0.5em;
-      color: var(--text-color1);
+      color: var(--green1);
       font-size: 64px;
   }
   
@@ -96,14 +95,14 @@
     margin-left: 3em;
     margin-right: 3em;
     margin-top: 2em;
-    color: var(--text-color1);
+    color: var(--green1);
   }
   
   .upcoming {
     margin-left: 3em;
     margin-right: 3em;
     margin-top: 2em;
-    color: var(--text-color1);
+    color: var(--green1);
   }
   
   .list-group {
