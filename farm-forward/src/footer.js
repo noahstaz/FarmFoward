@@ -20,7 +20,7 @@ const Footer = () => {
           <div className="item2">
             <span className="copyright">
               <span className="text">©</span>{" "}
-              {new Date().getFullYear()} FastForward. All Rights Reserved.
+              {new Date().getFullYear()} FarmForward. All Rights Reserved.
             </span>
           </div>
           <div className="social-icons">
