@@ -109,43 +109,46 @@ const OnboardingScreen = () => {
         return (
           <form onSubmit={handleSubmit}>
             <h2>I am...</h2>
-            <div>
-              <label>
-                <input
-                  type="radio"
-                  name="role"
-                  value="farmer"
-                  checked={formData.role === 'farmer'}
-                  onChange={handleInputChange}
-                />
+            <div className="radio-wrapper">
+              <input
+                type="radio"
+                name="role"
+                value="farmer"
+                checked={formData.role === 'farmer'}
+                onChange={handleInputChange}
+                id="farmer"
+              />
+              <label htmlFor="farmer" className="radio-label">
                 A farmer
               </label>
             </div>
-            <div>
-              <label>
-                <input
-                  type="radio"
-                  name="role"
-                  value="interested"
-                  checked={formData.role === 'interested'}
-                  onChange={handleInputChange}
-                />
+            <div className="radio-wrapper">
+              <input
+                type="radio"
+                name="role"
+                value="interested"
+                checked={formData.role === 'interested'}
+                onChange={handleInputChange}
+                id="interested"
+              />
+              <label htmlFor="interested" className="radio-label">
                 Interested in farming
               </label>
             </div>
-            <div>
-              <label>
-                <input
-                  type="radio"
-                  name="role"
-                  value="exploring"
-                  checked={formData.role === 'exploring'}
-                  onChange={handleInputChange}
-                />
+            <div className="radio-wrapper">
+              <input
+                type="radio"
+                name="role"
+                value="exploring"
+                checked={formData.role === 'exploring'}
+                onChange={handleInputChange}
+                id="exploring"
+              />
+              <label htmlFor="exploring" className="radio-label">
                 Exploring
               </label>
             </div>
-            <div>
+            <div class="buttons">
               <button type="button" onClick={handleBack}>
                 Back
               </button>
@@ -157,51 +160,55 @@ const OnboardingScreen = () => {
           return (
             <form onSubmit={handleSubmit}>
               <h2>I'm interested in...</h2>
-              <div>
-                <label>
-                  <input
-                    type="checkbox"
-                    name="grants"
-                    checked={formData.grants}
-                    onChange={handleInputChange}
-                  />
+              <div className="checkbox-wrapper">
+                <input
+                  type="checkbox"
+                  name="grants"
+                  checked={formData.grants}
+                  onChange={handleInputChange}
+                  id="grants"
+                />
+                <label htmlFor="grants" className="checkbox-label">
                   Grants
                 </label>
               </div>
-              <div>
-                <label>
-                  <input
-                    type="checkbox"
-                    name="tutorial"
-                    checked={formData.tutorial}
-                    onChange={handleInputChange}
-                  />
+              <div className="checkbox-wrapper">
+                <input
+                  type="checkbox"
+                  name="tutorial"
+                  checked={formData.tutorial}
+                  onChange={handleInputChange}
+                  id="tutorial"
+                />
+                <label htmlFor="tutorial" className="checkbox-label">
                   Tutorials
                 </label>
               </div>
-              <div>
-                <label>
-                  <input
-                    type="checkbox"
-                    name="equipment"
-                    checked={formData.equipment}
-                    onChange={handleInputChange}
-                  />
+              <div className="checkbox-wrapper">
+                <input
+                  type="checkbox"
+                  name="equipment"
+                  checked={formData.equipment}
+                  onChange={handleInputChange}
+                  id="equipment"
+                />
+                <label htmlFor="equipment" className="checkbox-label">
                   Equipment
                 </label>
               </div>
-              <div>
-                <label>
-                  <input
-                    type="checkbox"
-                    name="newsletter"
-                    checked={formData.newsletter}
-                    onChange={handleInputChange}
-                  />
+              <div className="checkbox-wrapper newsletter-wrapper">
+                <input
+                  type="checkbox"
+                  name="newsletter"
+                  checked={formData.newsletter}
+                  onChange={handleInputChange}
+                  id="newsletter"
+                />
+                <label htmlFor="newsletter" className="checkbox-label newsletter">
                   Sign up for newsletter
                 </label>
               </div>
-              <div>
+              <div class="buttons">
                 <button type="button" onClick={handleBack}>
                   Back
                 </button>
